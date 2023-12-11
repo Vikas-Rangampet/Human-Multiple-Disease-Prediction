@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <br><br>
+    <div class="container mb-5 pb-5">
+        <h1 class="text-center">Kidney Disesase Prediction Result</h1>
+    </div>
+        <!-- Result -->
+        <div class="text-center">
+            {% if pred == 1 %}
+                <h1>Prediction: <span class='danger'>Oops! You have Disesase.</span></h1>
+               
+            {% else %}
+                <h1>Prediction: <span class='safe'>Great! You DON'T have  Disesase.</span></h1>
+                
+            {% endif %}
+            <br>
+            <br>
+            <div class="row" style="align-items: right; ">
+                <div class="col-md-4"></div>
+                <div class="col-md-2" ><a href="{{ url_for('kidneyPage') }}" class="btn btn-block btn-primary">Back to Home</a></div>
+                <div class="col-md-4"></div>
+            </div>
+            
+        </div>
+{% endblock %}
