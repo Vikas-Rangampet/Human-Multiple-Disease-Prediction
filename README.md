@@ -1,4 +1,8 @@
 #Human-Multiple-Disease-Prediction
-1.clone this repo 
-2.run app.py for final output
-3.and web application opens finally
+ ## To simply run this model:
+1. Clone this repository
+2. run app.py application locally
+3. view your output results in web based application
+4. THANK YOU
+
+
